@@ -45,42 +45,62 @@ a {
     text-decoration: none;
 }
 
+/* --- Studio Header --- */
+.studio-header {
+    width: 100%;
+    padding: 18px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    background: rgba(6, 7, 9, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.header-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-centered {
+    justify-content: center;
+    text-align: center;
+}
+
+.studio-brand {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo-img {
+    height: 50px;
+    width: auto;
+    max-width: 230px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.studio-brand:hover .brand-logo-img {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
 /* --- Hero Section --- */
 .hero-section {
-    padding: 60px 24px 50px;
+    padding: 70px 24px 50px;
     border-bottom: 1px solid var(--border-light);
 }
 
 .hero-container {
     max-width: 1300px;
     margin: 0 auto;
-}
-
-/* Hero Integrated Brand Logo (Left-Aligned, Balanced Size) */
-.hero-brand-wrap {
-    margin-bottom: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.hero-brand-link {
-    display: inline-flex;
-    align-items: center;
-    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
-}
-
-.hero-brand-link:hover {
-    transform: scale(1.02);
-    opacity: 0.95;
-}
-
-.hero-logo-img {
-    height: 42px;
-    width: auto;
-    max-width: 185px;
-    object-fit: contain;
-    display: block;
 }
 
 /* Service Tag Above Headline */
@@ -816,15 +836,16 @@ a {
         height: 42px;
         font-size: 1.15rem;
     }
+    .studio-header {
+        padding: 14px 16px;
+    }
+    .brand-logo-img {
+        height: 40px;
+        max-width: 180px;
+        margin: 0 auto;
+    }
     .hero-section {
-        padding: 40px 16px 28px;
-    }
-    .hero-brand-wrap {
-        margin-bottom: 20px;
-    }
-    .hero-logo-img {
-        height: 35px;
-        max-width: 155px;
+        padding: 45px 16px 28px;
     }
     .footer-brand-wrap {
         flex-direction: column;
