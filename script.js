@@ -147,18 +147,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* --- Contact Form Handling --- */
-    const contactForm = document.getElementById('contact-form');
-    const formAlert = document.getElementById('form-alert');
+    /* --- Dynamic WhatsApp Inquiry Handling (+91 9016786537) --- */
+    const quickMsgInput = document.getElementById('quick-inquiry-msg');
+    const whatsappBtn = document.getElementById('whatsapp-inquiry-btn');
+    const basePhone = '919016786537';
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            formAlert.style.display = 'block';
-            contactForm.reset();
-            setTimeout(() => {
-                formAlert.style.display = 'none';
-            }, 5000);
+    if (quickMsgInput && whatsappBtn) {
+        const updateWhatsAppUrl = () => {
+            const userMsg = quickMsgInput.value.trim();
+            const text = userMsg 
+                ? `Hello OG Marketing, I want to inquire for video editing. Project details: ${userMsg}`
+                : `Hello OG Marketing, I want to send an inquiry for video editing services.`;
+            whatsappBtn.href = `https://wa.me/${basePhone}?text=${encodeURIComponent(text)}`;
+        };
+
+        quickMsgInput.addEventListener('input', updateWhatsAppUrl);
+        quickMsgInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                updateWhatsAppUrl();
+                whatsappBtn.click();
+            }
         });
     }
 
