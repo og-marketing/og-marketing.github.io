@@ -92,16 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    /* --- Hide Header on Scroll --- */
-    const studioHeader = document.getElementById('studio-header') || document.querySelector('.studio-header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-            if (studioHeader) studioHeader.classList.add('header-hidden');
-        } else {
-            if (studioHeader) studioHeader.classList.remove('header-hidden');
-        }
-    }, { passive: true });
-
     /* --- Video Type Filter Pills --- */
     const filterPills = document.querySelectorAll('.filter-pill');
     const videoCards = document.querySelectorAll('.video-card');
