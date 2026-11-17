@@ -67,12 +67,35 @@ document.addEventListener('DOMContentLoaded', () => {
     function playVideo(url) {
         const videoId = getYouTubeId(url);
         
-        // Autoplay with voice (mute=0), playsinline
-        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&rel=0&playsinline=1`;
+        // Instant guaranteed autoplay with mute=1 and API control
+        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&enablejsapi=1&rel=0`;
         youtubeIframe.src = embedUrl;
 
         videoModal.classList.add('is-active');
         document.body.style.overflow = 'hidden';
+
+        // Attempt to unmute after player starts
+        youtubeIframe.onload = () => {
+            setTimeout(() => {
+                try {
+                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
+                        event: 'command',
+                        func: 'unMute',
+                        args: []
+                    }), '*');
+                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
+                        event: 'command',
+                        func: 'setVolume',
+                        args: [100]
+                    }), '*');
+                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
+                        event: 'command',
+                        func: 'playVideo',
+                        args: []
+                    }), '*');
+                } catch (e) {}
+            }, 300);
+        };
     }
 
     function closeVideoModal() {
