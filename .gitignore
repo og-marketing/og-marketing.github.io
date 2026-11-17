@@ -1,0 +1,12 @@
+# Raw inspiration and downloaded Behance scrape
+_raw_inspiration/
+modules.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and environment
+*.log
+.env

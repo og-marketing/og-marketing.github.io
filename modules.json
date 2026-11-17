@@ -1,0 +1,606 @@
+[
+  {
+    "index": 0,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "db4ca3242441991.696ec73f5f0d0.png",
+      "width": 226,
+      "height": 113,
+      "alt": ""
+    }
+  },
+  {
+    "index": 1,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "c2be68242441991.696eca3fadf2d.gif",
+      "width": 226,
+      "height": 113,
+      "alt": "Image may contain: screenshot"
+    }
+  },
+  {
+    "index": 2,
+    "type": "ImageModule",
+    "fullBleed": false,
+    "caption": "",
+    "image": {
+      "filename": "56e1dc242441991.696ec73f5e83e.png",
+      "width": 226,
+      "height": 113,
+      "alt": "Image may contain: screenshot"
+    }
+  },
+  {
+    "index": 3,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "a5039e242441991.6a3ed96eb02a0.png",
+      "width": 600,
+      "height": 338,
+      "alt": "Image may contain: clothing, human face and smile"
+    }
+  },
+  {
+    "index": 4,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "1331e8242441991.696eca3fad6da.png",
+      "width": 600,
+      "height": 338,
+      "alt": ""
+    }
+  },
+  {
+    "index": 5,
+    "type": "ImageModule",
+    "fullBleed": false,
+    "caption": "",
+    "image": {
+      "filename": "fe2181242441991.696ea0828149a.gif",
+      "width": 226,
+      "height": 113,
+      "alt": "Image may contain: logo and font"
+    }
+  },
+  {
+    "index": 6,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "49e536242441991.696eb55b35723.gif",
+      "width": 600,
+      "height": 338,
+      "alt": ""
+    }
+  },
+  {
+    "index": 7,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "f74aba242441991.69740ffc0034c.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "625c4f242441991.69740ffc01252.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "7a8017242441991.69740ffc00cda.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "961561242441991.69740ffc01fc3.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "bc5670242441991.69740ffc0193d.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "afae6f242441991.69740ffd05a49.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "e10d44242441991.69740ffd0605a.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "ca2baf242441991.69740ffd05383.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "c384c7242441991.69740ffe23ff9.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "4803e1242441991.69740ffe24d83.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      },
+      {
+        "filename": "6baacc242441991.69740ffe2482b.gif",
+        "width": 608,
+        "height": 1080,
+        "flexWidth": 146.37037037037038,
+        "flexHeight": 177.63157894736844
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "type": "ImageModule",
+    "fullBleed": false,
+    "caption": "",
+    "image": {
+      "filename": "87e3fc242441991.696d93fbc4583.gif",
+      "width": 226,
+      "height": 113,
+      "alt": "Image may contain: screenshot and logo"
+    }
+  },
+  {
+    "index": 11,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "4b2975242441991.696ea04ee10dc.gif",
+      "width": 600,
+      "height": 338,
+      "alt": ""
+    }
+  },
+  {
+    "index": 12,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "c65586242441991.697016684d457.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "c32974242441991.697016684c818.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "4651a0242441991.697016684ce4c.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "d4c77a242441991.697016684da77.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "c92b3f242441991.697016684c432.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "2201d7242441991.697012ada19ae.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "931690242441991.697012ada1338.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "d9c68a242441991.697012ada21cf.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "29cdb6242441991.697012ae9a71f.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "262bbf242441991.697012ae99683.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "a0a747242441991.697012ae9b53b.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "4ad2e5242441991.697012ae99d49.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      },
+      {
+        "filename": "336c6a242441991.697012ae9ad1f.gif",
+        "width": 405,
+        "height": 720,
+        "flexWidth": 146.25,
+        "flexHeight": 177.77777777777777
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "type": "ImageModule",
+    "fullBleed": false,
+    "caption": "",
+    "image": {
+      "filename": "695156242441991.696ea08280d48.gif",
+      "width": 226,
+      "height": 113,
+      "alt": "Image may contain: logo and font"
+    }
+  },
+  {
+    "index": 16,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "bc729b242441991.6973fe33a3ee3.gif",
+      "width": 600,
+      "height": 338,
+      "alt": ""
+    }
+  },
+  {
+    "index": 17,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "0ff83e242441991.69740e946f572.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "f4455c242441991.69740e946e481.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "398df6242441991.69740e946ed2c.jpg",
+        "width": 1080,
+        "height": 1080,
+        "flexWidth": 260,
+        "flexHeight": 100
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "335e80242441991.69740e955a8dd.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "0f8b6d242441991.69740e955b6b9.jpg",
+        "width": 1440,
+        "height": 1440,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "ade24f242441991.69740e955bf94.jpg",
+        "width": 2048,
+        "height": 2047,
+        "flexWidth": 260.12701514411333,
+        "flexHeight": 99.951171875
+      },
+      {
+        "filename": "ab261a242441991.69740e955c5f8.jpg",
+        "width": 2048,
+        "height": 2047,
+        "flexWidth": 260.12701514411333,
+        "flexHeight": 99.951171875
+      },
+      {
+        "filename": "558c88242441991.69740e955b13e.jpg",
+        "width": 2048,
+        "height": 2048,
+        "flexWidth": 260,
+        "flexHeight": 100
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "0bc31d242441991.69740e9648ef1.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "8d3abb242441991.69740e964849b.jpg",
+        "width": 1600,
+        "height": 1600,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "7a3fff242441991.69740e96489ee.jpg",
+        "width": 1600,
+        "height": 1600,
+        "flexWidth": 260,
+        "flexHeight": 100
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "type": "ImageModule",
+    "fullBleed": false,
+    "caption": "",
+    "image": {
+      "filename": "0e8b8a242441991.696ea08280687.gif",
+      "width": 226,
+      "height": 113,
+      "alt": ""
+    }
+  },
+  {
+    "index": 21,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "e2ed6e242441991.69743dbf408ee.jpg",
+        "width": 3000,
+        "height": 2000,
+        "flexWidth": 390,
+        "flexHeight": 66.66666666666666
+      },
+      {
+        "filename": "69f4cf242441991.69743dbf40253.jpg",
+        "width": 2000,
+        "height": 3000,
+        "flexWidth": 173.33333333333334,
+        "flexHeight": 150
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "5b1e00242441991.69743dbfe4a1a.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "772155242441991.69743dbfe4289.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      },
+      {
+        "filename": "028403242441991.69743dbfe3c75.jpg",
+        "width": 2000,
+        "height": 2000,
+        "flexWidth": 260,
+        "flexHeight": 100
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "9eb133242441991.697446b86855b.jpg",
+        "width": 3000,
+        "height": 2000,
+        "flexWidth": 390,
+        "flexHeight": 66.66666666666666
+      },
+      {
+        "filename": "1d5d42242441991.697446b867d4b.jpg",
+        "width": 2000,
+        "height": 3000,
+        "flexWidth": 173.33333333333334,
+        "flexHeight": 150
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "fab342242441991.69743dc0b4e41.jpg",
+        "width": 3000,
+        "height": 2000,
+        "flexWidth": 390,
+        "flexHeight": 66.66666666666666
+      },
+      {
+        "filename": "6872d0242441991.69743dc0b555f.jpg",
+        "width": 3000,
+        "height": 2000,
+        "flexWidth": 390,
+        "flexHeight": 66.66666666666666
+      },
+      {
+        "filename": "0fb7e5242441991.69743dc0b5b3d.jpg",
+        "width": 2000,
+        "height": 3000,
+        "flexWidth": 173.33333333333334,
+        "flexHeight": 150
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "type": "MediaCollectionModule",
+    "fullBleed": false,
+    "caption": "",
+    "components": [
+      {
+        "filename": "46c8ee242441991.69743dc174bde.jpg",
+        "width": 2000,
+        "height": 3000,
+        "flexWidth": 173.33333333333334,
+        "flexHeight": 150
+      },
+      {
+        "filename": "60d9e5242441991.69743dc1752f6.jpg",
+        "width": 2000,
+        "height": 3000,
+        "flexWidth": 173.33333333333334,
+        "flexHeight": 150
+      },
+      {
+        "filename": "df1928242441991.69743dc175bc0.jpg",
+        "width": 3000,
+        "height": 2000,
+        "flexWidth": 390,
+        "flexHeight": 66.66666666666666
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "type": "ImageModule",
+    "fullBleed": true,
+    "caption": "",
+    "image": {
+      "filename": "ad43ad242441991.696ecad904606.png",
+      "width": 600,
+      "height": 338,
+      "alt": "Image may contain: screenshot"
+    }
+  }
+]
