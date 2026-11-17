@@ -48,7 +48,7 @@ a {
 /* --- Studio Header --- */
 .studio-header {
     width: 100%;
-    padding: 22px 32px;
+    padding: 20px 32px;
     position: sticky;
     top: 0;
     z-index: 500;
@@ -56,6 +56,13 @@ a {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-light);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+}
+
+.studio-header.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .header-inner {
@@ -63,28 +70,23 @@ a {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.header-centered {
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .studio-brand {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 12px;
+    justify-content: flex-start;
 }
 
 .brand-logo-img {
-    height: 44px;
+    height: 38px;
     width: auto;
-    max-width: 200px;
+    max-width: 170px;
     object-fit: contain;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -917,12 +919,12 @@ a {
         font-size: 1.15rem;
     }
     .studio-header {
-        padding: 16px 20px;
+        padding: 14px 20px;
     }
     .brand-logo-img {
-        height: 36px;
-        max-width: 160px;
-        margin: 0 auto;
+        height: 32px;
+        max-width: 140px;
+        margin: 0;
     }
     .footer-brand-wrap {
         flex-direction: column;
