@@ -56,9 +56,9 @@ a {
     margin: 0 auto;
 }
 
-/* Hero Integrated Brand Logo (Left-Aligned, Clean & Big) */
+/* Hero Integrated Brand Logo (Left-Aligned, Balanced Size) */
 .hero-brand-wrap {
-    margin-bottom: 32px;
+    margin-bottom: 26px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -71,14 +71,14 @@ a {
 }
 
 .hero-brand-link:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
     opacity: 0.95;
 }
 
 .hero-logo-img {
-    height: 56px;
+    height: 42px;
     width: auto;
-    max-width: 250px;
+    max-width: 185px;
     object-fit: contain;
     display: block;
 }
@@ -820,11 +820,11 @@ a {
         padding: 40px 16px 28px;
     }
     .hero-brand-wrap {
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
     .hero-logo-img {
-        height: 44px;
-        max-width: 190px;
+        height: 35px;
+        max-width: 155px;
     }
     .footer-brand-wrap {
         flex-direction: column;
