@@ -55,11 +55,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const modalBackBtn = document.getElementById('modal-back-btn');
     const youtubeIframe = document.getElementById('youtube-iframe');
+    const soundToggleBtn = document.getElementById('sound-toggle-btn');
+    let isSoundMuted = true;
 
-    // Handle Card Click -> Play Video directly with sound
+    function sendPlayerCommand(func, args = []) {
+        try {
+            if (youtubeIframe && youtubeIframe.contentWindow) {
+                youtubeIframe.contentWindow.postMessage(JSON.stringify({
+                    event: 'command',
+                    func: func,
+                    args: args
+                }), '*');
+            }
+        } catch (e) {}
+    }
+
+    if (soundToggleBtn) {
+        soundToggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (isSoundMuted) {
+                sendPlayerCommand('unMute');
+                sendPlayerCommand('setVolume', [100]);
+                isSoundMuted = false;
+                soundToggleBtn.querySelector('.sound-icon').textContent = '🔊';
+                soundToggleBtn.querySelector('.sound-text').textContent = 'Sound ON';
+                soundToggleBtn.style.background = '#ffffff';
+                soundToggleBtn.style.color = '#000000';
+            } else {
+                sendPlayerCommand('mute');
+                isSoundMuted = true;
+                soundToggleBtn.querySelector('.sound-icon').textContent = '🔇';
+                soundToggleBtn.querySelector('.sound-text').textContent = 'Sound Muted';
+                soundToggleBtn.style.background = 'rgba(255, 255, 255, 0.85)';
+                soundToggleBtn.style.color = '#000000';
+            }
+        });
+    }
+
+    // Handle Card Click -> Play Video directly on tap
     document.querySelectorAll('.video-card').forEach(card => {
         card.addEventListener('click', () => {
-            const ytUrl = card.getAttribute('data-youtube') || 'https://www.youtube.com/embed/hMzav_ATKq0';
+            const ytUrl = card.getAttribute('data-youtube') || 'hMzav_ATKq0';
             playVideo(ytUrl);
         });
     });
@@ -67,28 +103,41 @@ document.addEventListener('DOMContentLoaded', () => {
     function playVideo(url) {
         const videoId = getYouTubeId(url);
         
-        // Autoplay enabled with sound & API control
-        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0`;
-        youtubeIframe.src = embedUrl;
-
+        // 1. Show modal FIRST so iframe is in active layout and not hidden
         videoModal.classList.add('is-active');
         document.body.style.overflow = 'hidden';
 
-        // Ensure video plays on load
+        // Reset sound pill
+        isSoundMuted = true;
+        if (soundToggleBtn) {
+            soundToggleBtn.querySelector('.sound-icon').textContent = '🔊';
+            soundToggleBtn.querySelector('.sound-text').textContent = 'Sound: Tap to Unmute';
+            soundToggleBtn.style.background = 'rgba(255, 255, 255, 0.95)';
+            soundToggleBtn.style.color = '#000000';
+        }
+
+        // 2. Set embed URL with guaranteed instant autoplay (mute=1 ensures zero red play button)
+        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&enablejsapi=1&rel=0&controls=1`;
+        youtubeIframe.src = embedUrl;
+
+        // 3. Automated playback & unMute signals
         youtubeIframe.onload = () => {
-            try {
-                youtubeIframe.contentWindow.postMessage(JSON.stringify({
-                    event: 'command',
-                    func: 'playVideo',
-                    args: []
-                }), '*');
-            } catch (e) {}
+            sendPlayerCommand('playVideo');
+
+            // Attempt unMute at staggered intervals
+            [300, 600, 1000].forEach(delay => {
+                setTimeout(() => {
+                    sendPlayerCommand('playVideo');
+                    sendPlayerCommand('unMute');
+                    sendPlayerCommand('setVolume', [100]);
+                }, delay);
+            });
         };
     }
 
     function closeVideoModal() {
         videoModal.classList.remove('is-active');
-        youtubeIframe.src = ''; // Stop video and audio
+        youtubeIframe.src = 'about:blank'; // Stop video and audio cleanly
         document.body.style.overflow = '';
     }
 

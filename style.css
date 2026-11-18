@@ -817,6 +817,36 @@ a {
     padding-top: 50px;
 }
 
+.sound-toggle-pill {
+    background: rgba(255, 255, 255, 0.95);
+    color: #000000;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    animation: pulse-sound 2s infinite ease-in-out;
+}
+
+.sound-toggle-pill:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+@keyframes pulse-sound {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); box-shadow: 0 6px 24px rgba(255, 255, 255, 0.3); }
+}
+
 /* Vertical 9:16 In-Site Player */
 .player-container {
     position: relative;
