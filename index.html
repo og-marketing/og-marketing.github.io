@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css?v=6.0">
+    <link rel="stylesheet" href="style.css?v=7.0">
 </head>
 <body class="theme-bw">
 
@@ -69,11 +69,11 @@
             <div class="video-nav-bar">
                 <div class="nav-filters">
                     <span class="filter-lead">FILTER:</span>
-                    <button class="filter-pill active" data-filter="all">All Works (10)</button>
+                    <button class="filter-pill active" data-filter="all">All Works (18)</button>
+                    <button class="filter-pill" data-filter="commercial">Commercial & Cinematic</button>
                     <button class="filter-pill" data-filter="product">Clothing & Product</button>
+                    <button class="filter-pill" data-filter="promotion">Promotion & UGC</button>
                     <button class="filter-pill" data-filter="realestate">Interior & Real Estate</button>
-                    <button class="filter-pill" data-filter="promotion">Promotion Reels</button>
-                    <button class="filter-pill" data-filter="commercial">Car & Commercial</button>
                 </div>
                 <a href="#video-grid" class="scroll-down-btn">
                     <span>Explore Videos</span>
@@ -88,178 +88,308 @@
         <div class="portfolio-wrapper">
             <div class="video-grid-canvas">
 
-                <!-- ROW 1: 5 Vertical Video Cards -->
-                <div class="grid-row row-5" id="row-1">
-                    <!-- Video 1: Car Delivery (Scorpio) -->
-                    <div class="video-card" data-id="1" data-type="commercial" data-youtube="18T3f0Ixp6A" data-title="Scorpio Delivery - Car Shoot">
-                        <div class="card-inner">
-                            <img src="assets/cat_shoot_18T3f0Ixp6A.jpg" alt="Scorpio Delivery" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Car Delivery</span>
+                <!-- Video 1: Promotion Reel (New) -->
+                <div class="video-card" data-id="1" data-type="promotion" data-youtube="9CLIM5NOv0Y" data-title="Promotion Reel">
+                    <div class="card-inner">
+                        <img src="assets/promotion_reel_9CLIM5NOv0Y.jpg" alt="Promotion Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Video 2: Clothing and Product Shoot 1 -->
-                    <div class="video-card" data-id="2" data-type="product" data-youtube="Ycv70RmaaNw" data-title="Season Earth - Clothing & Product Shoot">
-                        <div class="card-inner">
-                            <img src="assets/clothing_product_1_Ycv70RmaaNw.jpg" alt="Season Earth Clothing" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Clothing & Product</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Video 3: Clothing and Product Shoot 2 -->
-                    <div class="video-card" data-id="3" data-type="product" data-youtube="Cpb3qBqO6wI" data-title="Season Earth - Clothing & Product Shoot">
-                        <div class="card-inner">
-                            <img src="assets/clothing_product_2_Cpb3qBqO6wI.jpg" alt="Season Earth Product Shoot" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Clothing & Product</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Video 4: Interior Shoot 1 -->
-                    <div class="video-card" data-id="4" data-type="realestate" data-youtube="3MkUtqmuBzg" data-title="Interior Shoot 2">
-                        <div class="card-inner">
-                            <img src="assets/interior_shoot_1_3MkUtqmuBzg.jpg" alt="Interior Shoot" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Interior Shoot</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Video 5: Interior Shoot 2 -->
-                    <div class="video-card" data-id="5" data-type="realestate" data-youtube="S_2FiNjpKCw" data-title="Interior Shoot 1">
-                        <div class="card-inner">
-                            <img src="assets/interior_shoot_2_S_2FiNjpKCw.jpg" alt="Interior Shoot" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Interior Shoot</span>
-                            </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Promotion Reel</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- ROW 2: 5 Vertical Video Cards -->
-                <div class="grid-row row-5" id="row-2">
-                    <!-- Video 6: Real Estate -->
-                    <div class="video-card" data-id="6" data-type="realestate" data-youtube="GUnKh0RQTDo" data-title="Laxmi Park - Real Estate">
-                        <div class="card-inner">
-                            <img src="assets/real_estate_GUnKh0RQTDo.jpg" alt="Real Estate Shoot" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Real Estate</span>
+                <!-- Video 2: Cinematic Reel (New) -->
+                <div class="video-card" data-id="2" data-type="commercial" data-youtube="TmFoLXMuruo" data-title="Cinematic Reel">
+                    <div class="card-inner">
+                        <img src="assets/cinematic_reel_TmFoLXMuruo.jpg" alt="Cinematic Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Video 7: Product Shoot -->
-                    <div class="video-card" data-id="7" data-type="product" data-youtube="WKpvzhGQ7Pc" data-title="Product Shoot">
-                        <div class="card-inner">
-                            <img src="assets/product_shoot_WKpvzhGQ7Pc.jpg" alt="Product Shoot" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Product Shoot</span>
-                            </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Cinematic Reel</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Video 8: Promotion Reel 1 -->
-                    <div class="video-card" data-id="8" data-type="promotion" data-youtube="QkL95-nGGBs" data-title="One More Cafe - Promotion Reel">
-                        <div class="card-inner">
-                            <img src="assets/promotion_reel_1_QkL95-nGGBs.jpg" alt="One More Cafe" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Promotion Reel</span>
+                <!-- Video 3: Product Shoot Clothing (New) -->
+                <div class="video-card" data-id="3" data-type="product" data-youtube="sWPnOZ95Y1w" data-title="Clothing & Product Shoot">
+                    <div class="card-inner">
+                        <img src="assets/clothing_product_sWPnOZ95Y1w.jpg" alt="Clothing Product Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Video 9: Promotion Reel 2 -->
-                    <div class="video-card" data-id="9" data-type="promotion" data-youtube="IZ7ueZMoEeg" data-title="Cargoobull - Promotion Video">
-                        <div class="card-inner">
-                            <img src="assets/promotion_reel_2_IZ7ueZMoEeg.jpg" alt="Cargoobull Promotion" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Promotion Reel</span>
-                            </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Clothing & Product</span>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Video 10: Brand Commercial -->
-                    <div class="video-card" data-id="10" data-type="commercial" data-youtube="hMzav_ATKq0" data-title="Car Delivery - Commercial">
-                        <div class="card-inner">
-                            <img src="assets/featured_brand_hMzav_ATKq0.jpg" alt="Car Delivery Commercial" class="card-thumb" loading="lazy">
-                            <div class="play-overlay">
-                                <div class="play-btn-circle">
-                                    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
-                                </div>
+                <!-- Video 4: Salon Commercial (New) -->
+                <div class="video-card" data-id="4" data-type="commercial" data-youtube="tPoMNVT1O0s" data-title="Salon Commercial Reel">
+                    <div class="card-inner">
+                        <img src="assets/salon_commercial_tPoMNVT1O0s.jpg" alt="Salon Commercial Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
                             </div>
-                            <div class="card-caption-overlay">
-                                <span class="card-tag">Car Commercial</span>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Salon Commercial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5: Event Reel (New) -->
+                <div class="video-card" data-id="5" data-type="promotion" data-youtube="FGwucnpMMAU" data-title="Event Reel">
+                    <div class="card-inner">
+                        <img src="assets/event_reel_FGwucnpMMAU.jpg" alt="Event Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
                             </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Event Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6: Cinematic Reel 2 (New) -->
+                <div class="video-card" data-id="6" data-type="commercial" data-youtube="kyPpQV2JPE8" data-title="Cinematic Reel">
+                    <div class="card-inner">
+                        <img src="assets/cinematic_reel_kyPpQV2JPE8.jpg" alt="Cinematic Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Cinematic Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 7: Product Shoot (New) -->
+                <div class="video-card" data-id="7" data-type="product" data-youtube="sla1tLkVNTo" data-title="Product Shoot">
+                    <div class="card-inner">
+                        <img src="assets/product_shoot_sla1tLkVNTo.jpg" alt="Product Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Product Shoot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 8: UGC Reel (New) -->
+                <div class="video-card" data-id="8" data-type="promotion" data-youtube="7sMEf9PHXhw" data-title="UGC Reel">
+                    <div class="card-inner">
+                        <img src="assets/ugc_reel_7sMEf9PHXhw.jpg" alt="UGC Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">UGC Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 9: Documentary Reel (New) -->
+                <div class="video-card" data-id="9" data-type="commercial" data-youtube="Lhm_w0lU_q0" data-title="Documentary Reel">
+                    <div class="card-inner">
+                        <img src="assets/documentary_reel_Lhm_w0lU_q0.jpg" alt="Documentary Reel" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Documentary Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 10: Car Commercial (Existing) -->
+                <div class="video-card" data-id="10" data-type="commercial" data-youtube="hMzav_ATKq0" data-title="Car Delivery - Commercial">
+                    <div class="card-inner">
+                        <img src="assets/featured_brand_hMzav_ATKq0.jpg" alt="Car Delivery Commercial" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Car Commercial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 11: Clothing and Product Shoot 1 (Existing) -->
+                <div class="video-card" data-id="11" data-type="product" data-youtube="Ycv70RmaaNw" data-title="Season Earth - Clothing & Product Shoot">
+                    <div class="card-inner">
+                        <img src="assets/clothing_product_1_Ycv70RmaaNw.jpg" alt="Season Earth Clothing" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Clothing & Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 12: Clothing and Product Shoot 2 (Existing) -->
+                <div class="video-card" data-id="12" data-type="product" data-youtube="Cpb3qBqO6wI" data-title="Season Earth - Clothing & Product Shoot">
+                    <div class="card-inner">
+                        <img src="assets/clothing_product_2_Cpb3qBqO6wI.jpg" alt="Season Earth Product Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Clothing & Product</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 13: Product Shoot (Existing) -->
+                <div class="video-card" data-id="13" data-type="product" data-youtube="WKpvzhGQ7Pc" data-title="Product Shoot">
+                    <div class="card-inner">
+                        <img src="assets/product_shoot_WKpvzhGQ7Pc.jpg" alt="Product Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Product Shoot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 14: Promotion Reel 1 (Existing) -->
+                <div class="video-card" data-id="14" data-type="promotion" data-youtube="QkL95-nGGBs" data-title="One More Cafe - Promotion Reel">
+                    <div class="card-inner">
+                        <img src="assets/promotion_reel_1_QkL95-nGGBs.jpg" alt="One More Cafe" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Promotion Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 15: Promotion Reel 2 (Existing) -->
+                <div class="video-card" data-id="15" data-type="promotion" data-youtube="IZ7ueZMoEeg" data-title="Cargoobull - Promotion Video">
+                    <div class="card-inner">
+                        <img src="assets/promotion_reel_2_IZ7ueZMoEeg.jpg" alt="Cargoobull Promotion" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Promotion Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 16: Interior Shoot 1 (Existing) -->
+                <div class="video-card" data-id="16" data-type="realestate" data-youtube="3MkUtqmuBzg" data-title="Interior Shoot 1">
+                    <div class="card-inner">
+                        <img src="assets/interior_shoot_1_3MkUtqmuBzg.jpg" alt="Interior Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Interior Shoot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 17: Interior Shoot 2 (Existing) -->
+                <div class="video-card" data-id="17" data-type="realestate" data-youtube="S_2FiNjpKCw" data-title="Interior Shoot 2">
+                    <div class="card-inner">
+                        <img src="assets/interior_shoot_2_S_2FiNjpKCw.jpg" alt="Interior Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Interior Shoot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 18: Real Estate (Existing) -->
+                <div class="video-card" data-id="18" data-type="realestate" data-youtube="GUnKh0RQTDo" data-title="Laxmi Park - Real Estate">
+                    <div class="card-inner">
+                        <img src="assets/real_estate_GUnKh0RQTDo.jpg" alt="Real Estate Shoot" class="card-thumb" loading="lazy">
+                        <div class="play-overlay">
+                            <div class="play-btn-circle">
+                                <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-caption-overlay">
+                            <span class="card-tag">Real Estate</span>
                         </div>
                     </div>
                 </div>
@@ -381,6 +511,6 @@
         </div>
     </div>
 
-    <script src="script.js?v=6.0"></script>
+    <script src="script.js?v=7.0"></script>
 </body>
 </html>

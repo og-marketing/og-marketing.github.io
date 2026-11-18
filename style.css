@@ -294,27 +294,10 @@ a {
 
 .video-grid-canvas {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: var(--card-gap);
     background-color: var(--bg-black);
-}
-
-.grid-row {
-    display: flex;
-    width: 100%;
-    gap: var(--card-gap);
-    align-items: stretch;
-}
-
-/* Row 1: 5 Cards */
-.grid-row.row-5 .video-card {
-    flex: 1 1 20%;
-}
-
-/* Row 2 & 3: 3 Cards */
-.grid-row.row-3 .video-card {
-    flex: 1 1 33.333%;
 }
 
 .video-card {
@@ -323,6 +306,8 @@ a {
     overflow: hidden;
     background-color: #000000;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
 }
 
 .video-card.is-hidden {
@@ -854,7 +839,16 @@ a {
 }
 
 /* --- Responsive Media Queries --- */
+@media (max-width: 1100px) {
+    .video-grid-canvas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 900px) {
+    .video-grid-canvas {
+        grid-template-columns: repeat(3, 1fr);
+    }
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -923,20 +917,9 @@ a {
     .portfolio-wrapper {
         padding: 0 8px;
     }
-    .grid-row.row-5, .grid-row.row-3 {
-        flex-wrap: wrap;
-    }
-    .grid-row.row-5 .video-card {
-        flex: 1 1 calc(50% - var(--card-gap));
-    }
-    .grid-row.row-5 .video-card:last-child {
-        flex: 1 1 100%;
-    }
-    .grid-row.row-3 .video-card {
-        flex: 1 1 calc(50% - var(--card-gap));
-    }
-    .grid-row.row-3 .video-card:last-child {
-        flex: 1 1 100%;
+    .video-grid-canvas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
     }
     .play-btn-circle {
         width: 46px;
