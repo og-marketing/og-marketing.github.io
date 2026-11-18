@@ -67,34 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function playVideo(url) {
         const videoId = getYouTubeId(url);
         
-        // Instant guaranteed autoplay with mute=1 and API control
-        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&enablejsapi=1&rel=0`;
+        // Autoplay enabled with sound & API control
+        const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&playsinline=1&enablejsapi=1&rel=0`;
         youtubeIframe.src = embedUrl;
 
         videoModal.classList.add('is-active');
         document.body.style.overflow = 'hidden';
 
-        // Attempt to unmute after player starts
+        // Ensure video plays on load
         youtubeIframe.onload = () => {
-            setTimeout(() => {
-                try {
-                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
-                        event: 'command',
-                        func: 'unMute',
-                        args: []
-                    }), '*');
-                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
-                        event: 'command',
-                        func: 'setVolume',
-                        args: [100]
-                    }), '*');
-                    youtubeIframe.contentWindow.postMessage(JSON.stringify({
-                        event: 'command',
-                        func: 'playVideo',
-                        args: []
-                    }), '*');
-                } catch (e) {}
-            }, 300);
+            try {
+                youtubeIframe.contentWindow.postMessage(JSON.stringify({
+                    event: 'command',
+                    func: 'playVideo',
+                    args: []
+                }), '*');
+            } catch (e) {}
         };
     }
 
@@ -130,18 +118,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoCards = document.querySelectorAll('.video-card');
 
     filterPills.forEach(pill => {
-        pill.addEventListener('click', () => {
+        pill.addEventListener('click', (e) => {
+            e.preventDefault();
             filterPills.forEach(p => p.classList.remove('active'));
             pill.classList.add('active');
 
-            const filter = pill.getAttribute('data-filter');
+            const filter = (pill.getAttribute('data-filter') || 'all').trim();
 
             videoCards.forEach(card => {
-                const cardType = card.getAttribute('data-type') || 'commercial';
+                const cardType = (card.getAttribute('data-type') || '').trim();
                 if (filter === 'all' || cardType === filter) {
                     card.classList.remove('is-hidden');
+                    card.style.display = '';
                 } else {
                     card.classList.add('is-hidden');
+                    card.style.display = 'none';
                 }
             });
         });
